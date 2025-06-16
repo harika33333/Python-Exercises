@@ -13,3 +13,13 @@ if(rev==num):
 else:
     print(False)
 
+n=1221
+number=str(n)
+number=number[::-1]
+b=int(number)
+print(b)
+if(n==b):
+    print(True)
+else:
+    print(False)
+
