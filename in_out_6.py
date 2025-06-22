@@ -5,7 +5,7 @@ file1=open("new_file.txt",'w')
 content = file.readlines()
 
 for i in content:
-    if i!="line5\n":
+    if i!=content[4]:
        # print(i)
        file1.write(i)
 
