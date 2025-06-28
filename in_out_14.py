@@ -1,4 +1,4 @@
-
+#exercise 14: 
 # You have two lists: names = ["Alice", "Bob", "Charlie"] and s
 # scores = [85, 92, 78]. Print these lists as a simple table with columns “Name” and “Score”.
 # Name       Score
@@ -9,8 +9,8 @@
 names = ["Alice", "Bob", "Charlie"] 
 a=max(names, key=len) 
 scores = [85, 92, 78]
-print("Name       Score")
-print("---------------")
+print(f"Names {"scores":>10}")
+print("-"*18)
 c=0
 char_len=len(a)
 for i in names:

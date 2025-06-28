@@ -1,17 +1,12 @@
-file=open("test.txt", 'r')
+#Exercise 6: Write all content of a file into a new file by skipping line number 5
 
-file1=open("new_file.txt",'w')
+with open("test.txt", 'r') as file:
+    content = file.readlines()
+with open("new_file.txt",'w') as file1:
+    for i in content:
+        if i!=content[4]:
+            #print(i) 
+            file1.write(i)
 
-content = file.readlines()
 
-for i in content:
-    if i!=content[4]:
-       # print(i)
-       file1.write(i)
-
-#print(type(content))
-#print(content[:2:1])
-
-file.close()
-file1.close()
 

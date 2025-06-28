@@ -1,4 +1,4 @@
-# Write a program to use the string.format() method to format the following three variables
+#Exercise 8: Write a program to use the string.format() method to format the following three variables
 # according to the expected output.
 totalMoney = 1000
 quantity = 3

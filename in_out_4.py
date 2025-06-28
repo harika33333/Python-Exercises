@@ -1,4 +1,4 @@
-# Display Float Number with 2 Decimal Places
+# exercise 4: Display Float Number with 2 Decimal Places
 
-n=678.984654
+n=float(input("enter a float number"))
 print("%.2f" % n)
