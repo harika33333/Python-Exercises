@@ -1,14 +1,9 @@
-#Exercise 4: Remove first n characters from a string
-'''Orginal String is  PYnative
-Printing only even index chars
-P
-n
-t
-v'''
-str = "Pynative"
-n=2
-#for i in range(len(str)):
- #   if i>=n:
-  #print(str[i])
+#Exercise 5: Check if the first and last numbers of a list are the same
 
-print(str[n:])
+numbers_x = [10, 20, 30, 40, 10]
+# output True
+
+if numbers_x[0]==numbers_x[len(numbers_x)-1]:
+    print(True)
+else:
+    print(False)

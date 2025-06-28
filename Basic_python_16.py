@@ -1,8 +1,5 @@
-# A palindrome number is a number that remains the same when
-# its digits are reversed. In simpler terms, it reads the same forwards and backward.
-# For example 121, 5005.
-# Write a code to check if given number is palindrome.
-n=1231
+#Exercise 16: Check Palindrome Number
+n=int(input("Enter a number: "))
 num=n
 rev=0
 while(n>0):

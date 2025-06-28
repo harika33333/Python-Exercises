@@ -1,17 +1,24 @@
 #Exercise 3: Print characters present at an even index number
-'''Orginal String is  PYnative
+
+'''Expected Output
+Orginal String is  PYnative
 Printing only even index chars
 P
 n
 t
 v'''
-str="Pynative"
-#for i in (str[::2]):
+
+
+my_str=str(input("Enter a string: "))
+#method1
+#for i in (my_str[::2]):  
  #   print(i)
-'''for i in range(len(str)):
+ 
+#method 2
+for i in range(len(my_str)):
     if i%2==0:
-        print(str[i])
-   '''
-#print(str[::2])
+        print(my_str[i])
+        
+#print(my_str[::2])
 
 

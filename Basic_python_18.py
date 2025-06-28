@@ -1,3 +1,4 @@
+#Exercise 18: Check if a given year is a leap year
 year=2024
 if year % 4 == 0:
     if year % 100 == 0:

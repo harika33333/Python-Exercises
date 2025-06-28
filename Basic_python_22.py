@@ -1,5 +1,7 @@
-str1 = "pynative.com is for python lovers"
-# Output Pynative.com Is For Python Lovers
+#Exercise 22: Capitalize the first letter of each word in a string
+
+
+str1 = str(input("enter a string: "))
 
 str1=str1.split(" ")
 for i in str1:

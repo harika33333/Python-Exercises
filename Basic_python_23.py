@@ -1,3 +1,4 @@
+#Exercise 23: Create a simple countdown timer using a while loop.
 # Time remaining: 5 seconds
 # Time remaining: 4 seconds
 # Time remaining: 3 seconds

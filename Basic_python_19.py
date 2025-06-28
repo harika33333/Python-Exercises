@@ -1,3 +1,11 @@
+#Exercise: 19: Print Alternate Prime Numbers till 20
+'''expected output
+All prime numbers from 1 to 20: 2, 3, 5, 7, 11, 13, 17, 19
+
+Alternate prime numbers from 1 to 20:
+2, 5, 11, 17
+'''
+
 prime_num= []
 
 for i in range(2,21):
