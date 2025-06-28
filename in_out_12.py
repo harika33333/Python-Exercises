@@ -15,6 +15,6 @@ while 1:
     
     elif(n==3):
         print("exit")
-        pass
+        break
     else:
         print("please enter a number in between 1-3")

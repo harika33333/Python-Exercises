@@ -18,3 +18,8 @@ for i in names:
         diff=char_len-len(i)
         print(i+(" "*diff)+"    "+str(scores[c]))
         c=c+1
+        
+        
+#------------
+for n , s in zip(names,scores):
+    print(f"{n:<10}{s:>5}")
