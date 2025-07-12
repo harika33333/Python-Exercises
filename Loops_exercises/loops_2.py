@@ -7,12 +7,12 @@
 #1 2 3 4
 #1 2 3 4 5
 
+def my_patt(n):
+    num_list = ""
+    s=""
+    for i in range(1,n+1):
+        num_list+=str(i)+" "
+        s=s+num_list+"\n"
+    return s
 
-n = 5
-
-num_list = ""
-
-for i in range(1,6):
-    num_list+=str(i)+" "
-    print(num_list)
-
+print(my_patt(n=5))

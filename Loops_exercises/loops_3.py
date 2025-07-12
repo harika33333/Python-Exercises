@@ -2,8 +2,11 @@
 #Expected Output
 #Enter number 10
 #Sum is:  55
-sm=0
+def cal_sum(n):
+    sm=0
+    for i in range(1,n+1):
+        sm=sm+i
+    return(sm)
 n=int(input("Enter number "))
-for i in range(1,n+1):
-    sm=sm+i
-print("Sum is: ",sm)
+sm=cal_sum(n)
+print("The result is",sm)

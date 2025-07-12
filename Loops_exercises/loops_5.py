@@ -6,12 +6,17 @@
 # If the number is greater than 500, then stop the loop
 
 
-numbers = [12, 75, 150, 180, 145, 525, 50]
-for i in numbers:
-    if i%5==0:
-        if i>500:
-            break
-        elif i>150:
-            continue
-        else:
-            print(i)
+
+def my_list(*numbers):
+    s=""
+    for i in numbers:
+        if i%5==0:
+            if i>500:
+                break
+            elif i>150:
+                continue
+            else:
+                s=s+str(i)+"\n"
+    return(s)
+print(my_list(12, 75, 150, 180, 145, 525, 50))
+
