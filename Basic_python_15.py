@@ -7,7 +7,11 @@ exponent = 5
 '''
 base=int(input("enter a base value: "))
 exp=int(input("enter a power value: "))
-power=base**exp
+def expo(base,exp):
+    power=base**exp
+    return(power)
+power=expo(base,exp)
 print("base =",base)
 print("exponent =",exp)
 print(f"{base} raises to the power of {exp}: {power} i.e ({((str(base)+" *") * exp)} = {power})")
+

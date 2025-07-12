@@ -8,13 +8,20 @@ Fibonacci sequence:
 0  1  1  2  3  5  8  13  21  34  55  89  144  233  377
 '''
 
-n1=0
-n2=1
+
 print("Fibonacci sequence:")
 n=int(input())
-while(n>0):
-    print(n1,end=" ")
-    sm=n1+n2
-    n1=n2
-    n2=sm
-    n=n-1
+
+def fibo(n):
+    s=""
+    n1=0
+    n2=1
+    while(n>0):
+        s=s+str(n1)+" "
+        sm=n1+n2
+        n1=n2
+        n2=sm
+        n=n-1
+    return(s)
+print(fibo(n))
+

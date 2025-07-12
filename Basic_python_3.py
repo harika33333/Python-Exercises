@@ -15,10 +15,16 @@ my_str=str(input("Enter a string: "))
  #   print(i)
  
 #method 2
-for i in range(len(my_str)):
-    if i%2==0:
-        print(my_str[i])
-        
+def slicing(p):
+    d=""
+    for i in range(len(p)):
+        if i%2==0:
+            d=(d+p[i])+"\n"
+    return(d)
+
+a=slicing("pynative")
+print(a)
+
 #print(my_str[::2])
 
 

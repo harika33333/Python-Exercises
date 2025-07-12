@@ -14,15 +14,16 @@ Current Number 8 Previous Number  7  Sum:  15
 Current Number 9 Previous Number  8  Sum:  17
 '''
 #Method 1
-'''
 num=int(input("enter the range"))
 print(f"Printing current and previous number sum in a range({num})")
-prev_num=0
-for i in range(0,num+1):
-    summ =prev_num+i
-    print("Current Number ",i,"Previous Number ",prev_num,"Sum:",summ)
-    prev_num=i
-'''
+def my_sum(num):
+    prev_num=0
+    for i in range(0,num+1):
+        summ =prev_num+i
+        print("Current Number ",i,"Previous Number ",prev_num,"Sum:",summ)
+        prev_num=i
+
+my_sum(num)
 
 #method 2
 #range function iterates in the given range of integers.

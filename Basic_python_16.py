@@ -1,13 +1,17 @@
 #Exercise 16: Check Palindrome Number
-n=int(input("Enter a number: "))
-num=n
-rev=0
-while(n>0):
-     rem=n%10
-     rev=rev*10+rem
-     n=n//10
-# print(rev)
-if(rev==num):
-    print(True)
-else:
-    print(False)
+
+num=int(input("Enter a number: "))
+n=num
+
+def pal_check(n):
+    rev=0
+    while(n>0):
+        rem=n%10#5 4 5
+        rev=(rev*10)+rem #5 54 545
+        n=n//10 #54 5
+    if(rev==num):
+        return(True)
+    else:
+        return(False)
+print(pal_check(n))
+

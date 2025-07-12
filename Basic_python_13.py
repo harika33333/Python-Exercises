@@ -2,8 +2,13 @@
 # The multiplication table from 1 to 10 is a table that shows the products
 # of numbers from 1 to 10.
 # Write a code to generates a complete multiplication table for numbers 1 through 10.
+def my_multiplation_table():
+    s=""
+    for i in range(1,11):
+        for j in range(1,11):
+            s=((s+str(i*j))+" ")
+        s=s+"\n"
+    return(s)
+print(my_multiplation_table())
 
-for i in range(1,11):
-    for j in range(1,11):
-        print(i*j,end=" ")
-    print()
+

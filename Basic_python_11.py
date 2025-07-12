@@ -2,8 +2,12 @@
 #For example, If the given integer number is 7536, the output shall be
 # “6 3 5 7“, with a space separating the digits.
 num=int(input("Enter a number: "))
-rev=0
-while(num>0):
-    rem=num%10
-    num=num//10
-    print(rem,end=" ")
+def rev_order(num):
+    s=""
+    while(num>0):
+        rem=num%10
+        num=num//10
+        s=(s+str(rem))+" "
+    return(s)
+print(rev_order(num))
+

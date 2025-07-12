@@ -4,5 +4,9 @@
 # * * *
 # * *
 # *
-for i in range(5,0,-1):
-    print("* "*i)
+def my_patterns():
+    s=""
+    for i in range(5,0,-1):
+        s=s+("* "*i)+"\n"
+        return(s)
+

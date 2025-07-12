@@ -5,14 +5,16 @@
 
 list1 = [10, 20, 25, 30, 35]
 list2 = [40, 45, 60, 75, 90]
+def my_list(list2,list1):
+    list3=[]
+    for i in list1:
+        if(i%2!=0):
+            list3.append(i)
+    for i in list2:
+        if(i%2==0):
+            list3.append(i)
+    return(list3)
 
-list3=[]
-for i in list1:
-    if(i%2!=0):
-        list3.append(i)
-for i in list2:
-    if(i%2==0):
-        list3.append(i)
-print("Result list: ",list3)
+print("Result list: ",my_list(list1 = [10, 20, 25, 30, 35],list2 = [40, 45, 60, 75, 90]))
 
 
