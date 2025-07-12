@@ -7,6 +7,12 @@
 #1 2 3 4
 #1 2 3 4 5
 
+
+n = 5
+
+num_list = ""
+
 for i in range(1,6):
-    print((str(i)+" ")*i)
-    
+    num_list+=str(i)+" "
+    print(num_list)
+
