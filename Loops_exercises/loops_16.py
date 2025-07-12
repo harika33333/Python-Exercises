@@ -11,5 +11,11 @@
 # Current Number is : 6  and the cube is 216
 
 n=int(input("enter a number: "))
-for i in range(1,n+1):
-    print(f"Current Number is : {i}  and the cube is {i**3}")
+def cube(n):
+    res=""
+    for i in range(1,n+1):
+        s=(f"Current Number is : {i}  and the cube is {i**3}")
+        res=res+s+"\n"
+    return(res)
+print(cube(n))
+

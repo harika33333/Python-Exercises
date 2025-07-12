@@ -7,9 +7,20 @@
 # 2 1
 # 1
 
+s=""
 for i in range(5,0,-1):
-    c=i
-    for j in range(i):
-        print(c,end=" ")
-        c=c-1
-    print()
+    s=s+str(i)+" "
+for i in range(0,len(s),2):
+    print(s[i::])
+
+############with functions#########
+def rev_patt():
+    s=""
+    res=""
+    for i in range(5,0,-1):
+        s=s+str(i)+" "
+    for i in range(0,len(s),2):
+        res=res+(s[i::])+"\n"
+    return(res)
+print(rev_patt())
+

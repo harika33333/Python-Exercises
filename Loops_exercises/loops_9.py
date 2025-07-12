@@ -10,5 +10,10 @@
 # -3
 # -2
 # -1
-for i in range(-10,0):
-    print(i)
+def disp_num(a,b):
+    res=""
+    for i in range(a,b+1):
+        res=res+str(i)+"\n"
+    return(res)
+print(disp_num(-10,-1))
+

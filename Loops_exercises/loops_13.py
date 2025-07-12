@@ -5,8 +5,11 @@
 #
 # For example, a factorial of 5! is 5 × 4 × 3 × 2 × 1 = 120
 n=int(input("enter a number"))
-fact=1
-while(n>0):
-    fact=fact*n
-    n=n-1
-print(fact)
+def factorial(n):
+    fact=1
+    while(n>0):
+        fact=fact*n
+        n=n-1
+    return(fact)
+print(factorial(n))
+
