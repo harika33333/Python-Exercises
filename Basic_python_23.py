@@ -5,8 +5,10 @@
 # Time remaining: 2 seconds
 # Time remaining: 1 seconds
 # Time's up!
-n=5
-while(n>0):
-    print(f"Time remaining: {n} seconds")
-    n=n-1
+def timer(n):
+    while(n>0):
+        print(f"Time remaining: {n} seconds")
+        n=n-1
+timer(5)
 print(" Time's up!")
+

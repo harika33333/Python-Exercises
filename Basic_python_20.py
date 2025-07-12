@@ -5,9 +5,12 @@
 # 3 3 3
 # 4 4
 # 5
-c=5
-for i in range(1,6):
-    print((str(i)+ " ")*c)
-    c=c-1
+def my_pattern(n):
+    s=""
+    c=5
+    for i in range(1,n+1):
+        s=s+((str(i)+ " ")*c)+"\n"
+        c=c-1
+    return(s)
+print(my_pattern(5))
 
-    

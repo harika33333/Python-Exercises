@@ -8,15 +8,20 @@ Alternate prime numbers from 1 to 20:
 
 prime_num= []
 
-for i in range(2,21):
-    for j in range(2,i):
-        if i % j == 0:
-            break
-    else:
-        prime_num.append(i)
-print(prime_num)
+def prime_list(n):
+    prime_num= []
+    for i in range(2,n+1):
+        for j in range(2,i):
+            if i % j == 0:
+                break
+        else:
+            prime_num.append(i)
+    return(prime_num)
+prime_num=prime_list(20)
+
 prime_num=prime_num[::2]
 print(prime_num)
+
 d=""
 for i in prime_num:
     d=d+str(i)+","

@@ -1,12 +1,14 @@
 #Exercise 18: Check if a given year is a leap year
-year=2024
-if year % 4 == 0:
-    if year % 100 == 0:
-        if year % 400 == 0:
-            print("True")
+def check_leap_year(year):
+    if year % 4 == 0:
+        if year % 100 == 0:
+            if year % 400 == 0:
+                return("True")
+            else:
+                return("False")
         else:
-            print("False")
+            return("True")
     else:
-        print("True")
-else:
-    print("False")
+        return("False")
+print(check_leap_year(2024))
+
