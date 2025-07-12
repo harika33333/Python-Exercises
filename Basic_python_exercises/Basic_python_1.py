@@ -15,6 +15,5 @@ def mull(num1,num2):
     if(prod <=1000):
         return prod
     else:
-     return(num1+num2)
+        return(num1+num2)
 print("The result is",mull(num1,num2))
-
