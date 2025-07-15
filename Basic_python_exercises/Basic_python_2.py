@@ -18,12 +18,16 @@ num=int(input("enter the range"))
 print(f"Printing current and previous number sum in a range({num})")
 def my_sum(num):
     prev_num=0
+    s=""
+    res=""
     for i in range(0,num+1):
         summ =prev_num+i
-        print("Current Number ",i,"Previous Number ",prev_num,"Sum:",summ)
+        s=f"Current Number {i} Previous Number {prev_num} Sum:{summ} \n"
+        res=res+s
         prev_num=i
+    return res
 
-my_sum(num)
+print(my_sum(num))
 
 #method 2
 #range function iterates in the given range of integers.
