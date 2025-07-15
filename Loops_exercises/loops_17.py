@@ -4,7 +4,9 @@
 # then the series will be 2+22+222+2222+22222=2469
 num=int(input("enter a number: "))
 num_terms=int(input("Enter no.of terms:"))
-sm=0
-for i in range(1,num_terms+1):
-    sm=sm+int(str(num)*i)
-print(sm)
+def sum_of_series(num,num_terms):
+    sm=0
+    for i in range(1,num_terms+1):
+        sm=sm+int(str(num)*i)
+    return(sm)
+print(sum_of_series(num,num_terms))

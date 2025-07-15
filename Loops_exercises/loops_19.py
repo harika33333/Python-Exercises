@@ -9,8 +9,14 @@
 # multiplication table of: 10
 #  10 20 30 40 50 60 70 80 90 100
 
-for i in range(1,11):
-    print(f"multiplication table of: {i}")
-    for j in range(1,11):
-        print(i*j,end=" ")
-    print()
+def mul_table():
+    res=""
+    for i in range(1,11):
+        msg=f"multiplication table of: {i} \n"
+        for j in range(1,11):
+            msg=msg+str(i*j)+" "
+        res=res+msg+"\n"
+    return(res)
+print(mul_table())
+
+
