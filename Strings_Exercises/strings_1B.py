@@ -6,6 +6,7 @@
 str1 = "JaSonAy"
 # Output
 # Dip
-mid=int(len(str1)/2)
-print(mid)
-print(str1[mid-1]+str1[mid]+str1[mid+1])
+def display(str1):
+    mid=int(len(str1)/2)
+    return(str1[mid-1]+str1[mid]+str1[mid+1])
+print(display(str1))
